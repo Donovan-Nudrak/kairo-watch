@@ -57,28 +57,30 @@ export const WATCH = {
   diameter: '40 mm',
 }
 
+const asset = (path: string) => `${import.meta.env.BASE_URL}${path}`
+
 export const IMAGES = {
   hero: {
-    src: '/images/KAIRO-hero.png',
-    fallback: '/images/watch-hero.jpg',
+    src: asset('images/KAIRO-hero.png'),
+    fallback: asset('images/watch-hero.jpg'),
     alt: 'KAIRO Chrono 01 automatic watch, three-quarter view of the dial and titanium bracelet',
   },
   detail: {
-    src: '/images/KAIRO-detail.png',
-    fallback: '/images/watch-detail.jpg',
+    src: asset('images/KAIRO-detail.png'),
+    fallback: asset('images/watch-detail.jpg'),
     alt: 'Chrono 01 held in hand, showing the brushed case, crown and chronograph pushers',
   },
   craft: {
-    src: '/images/KAIRO-craft.png',
-    fallback: '/images/watch-craft.jpg',
+    src: asset('images/KAIRO-craft.png'),
+    fallback: asset('images/watch-craft.jpg'),
     alt: 'Chrono 01 on a dark reflective surface, titanium case and sapphire crystal in close detail',
   },
   wrist: {
-    src: '/images/KAIRO-wrist.png',
-    fallback: '/images/watch-wrist.jpg',
+    src: asset('images/KAIRO-wrist.png'),
+    fallback: asset('images/watch-wrist.jpg'),
     alt: 'Chrono 01 resting on dark fabric, showing the dial, bezel and metal bracelet',
   },
-} as const satisfies Record<string, CampaignImageSource>
+} satisfies Record<string, CampaignImageSource>
 
 export const SPECS = [
   {
