@@ -88,11 +88,7 @@ export function FinishSelector({ finishId, onFinishChange, onReserve }: FinishSe
                           transition={{ duration: 0.45, ease: easePremium }}
                         />
                       ) : null}
-                      <span
-                        className="finish-swatch"
-                        style={{ '--swatch': option.swatch } as CSSProperties}
-                        aria-hidden="true"
-                      />
+                      <span className="finish-swatch" aria-hidden="true" />
                       <span className="finish-option__name">{option.name}</span>
                       <span className="finish-option__ref">{option.reference}</span>
                     </button>

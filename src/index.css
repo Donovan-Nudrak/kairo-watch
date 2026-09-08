@@ -1265,7 +1265,7 @@ html.is-hidden .second-hand {
   height: 0.72rem;
   border: 1px solid var(--line);
   border-radius: 50%;
-  background: var(--swatch, #111);
+  background: #fff;
 }
 
 .finish-option__name {
