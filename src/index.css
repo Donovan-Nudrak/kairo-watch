@@ -1451,24 +1451,6 @@ html.is-hidden .second-hand {
   gap: 1rem 1.4rem;
 }
 
-.site-footer__contact {
-  display: grid;
-  gap: 0.45rem;
-}
-
-.site-footer__contact .nav-link {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 0.45rem 0.7rem;
-  font-family: var(--font-mono);
-  font-size: 0.6875rem;
-  letter-spacing: 0.1em;
-}
-
-.site-footer__contact .nav-link span {
-  color: var(--text);
-}
-
 .site-footer__legal {
   max-width: var(--measure);
   line-height: 1.75;
@@ -1476,7 +1458,7 @@ html.is-hidden .second-hand {
 
 @media (min-width: 860px) {
   .site-footer__inner {
-    grid-template-columns: 1fr auto auto;
+    grid-template-columns: 1fr auto;
     align-items: start;
   }
 
